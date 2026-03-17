@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Gradiente de fundo conforme a imagem */
+    background: linear-gradient(to right, #b9fbc0, #8ecae6, #9db4ff);
+    min-height: 100vh;
+}
+
+/* --- Cabeçalho --- */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a2a6c;
+}
+
+.logo-text span {
+    color: #833ab4; /* Toque roxo no IA */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito Hover nos links */
+.nav-links a:hover {
+    color: #833ab4;
+    transform: translateY(-2px);
+}
+
+/* --- Seção Principal --- */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-container {
+    display: flex;
+    max-width: 1100px;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-image img {
+    /* Dimensões preparadas conforme a imagem de referência */
+    width: 600px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 400px;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+/* --- Botão Publique --- */
+.btn-pub {
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+    background: linear-gradient(135deg, #ff6b6b, #833ab4);
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efeito Hover no botão */
+.btn-pub:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(131, 58, 180, 0.4);
+    filter: brightness(1.1);
+}
